@@ -1,0 +1,18 @@
+#aboutbody {
+  display: grid;
+  min-height: 100vh;
+}
+
+header {
+  align-self: start;
+}
+
+footer {
+  align-self: end;
+}
+
+.about_content {
+  background-color: red;
+  color: white;
+  margin-top: 95px;
+}

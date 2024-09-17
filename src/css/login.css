@@ -1,0 +1,92 @@
+#loginBody {
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.LoginFormContainer {
+  background-color: white;
+  width: 35%;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px 30px;
+}
+
+.LoginFormContainer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginFormContainer .title a {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: blue;
+  text-decoration: none;
+}
+
+.LoginFormContainer div label {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.LoginFormContainer div input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(211, 211, 211, 0.76);
+}
+
+.LoginFormContainer div input:focus {
+  outline: 1px solid blue;
+}
+
+.LoginFormContainer .action {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: rgba(255, 166, 0, 0.753);
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.LoginFormContainer .signUp {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* responsive design */
+@media (max-width: 1000px) {
+  .LoginFormContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .LoginFormContainer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .LoginFormContainer {
+    width: 90%;
+  }
+
+  .LoginFormContainer .action {
+    flex-direction: column;
+    gap: 15px;
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,339 @@
+/* intro section starts */
+.intro_section {
+  /* border: 1px solid red; */
+  height: 100vh;
+  background-color: black;
+  background-image: url("../images/gong.jpeg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 1000px 1000px 2000px rgba(0, 0, 0, 0.5);
+  /* Normally, a box-shadow is applied outside the edges of the element, creating an outer shadow. However, when you use the inset keyword, the shadow is applied inside the element, creating an inner shadow */
+  position: relative;
+  top: -100px;
+  width: 100%;
+  z-index: -1;
+}
+
+.intro_section--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid blue; */
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.welcome {
+  color: var(--white);
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.intro_text {
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.intro_concept {
+  color: var(--purple);
+}
+
+.buttons {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.register,
+.login {
+  padding: 8px;
+  width: 150px;
+  border: none;
+  font-size: 18px;
+}
+
+.register {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.login {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.playStore,
+.appStore {
+  width: 150px;
+}
+
+/* intro section ends */
+
+/* services section starts */
+.services_section {
+  /* border: 1px solid red; */
+  background-color: var(--light);
+  height: 600px;
+}
+
+.services_section--content {
+  /* border: 1px solid blue; */
+  padding: 80px 0;
+  height: 600px;
+  align-items: center;
+}
+
+.services_section--content_right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  /* border: 2px solid saddlebrown; */
+}
+
+.service_title {
+  /* text-align: center; */
+  font-size: 50px;
+  line-height: 1.5;
+}
+
+.service_btn {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 75px;
+  background-image: linear-gradient(to right, rgb(44, 44, 238), rgb(7, 7, 69));
+  color: var(--white);
+  font-size: 18px;
+  box-shadow: 2px 2px 20px var(--indigo);
+}
+
+.services_section--content_left {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.services_section--content_left .service {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.automated {
+  font-size: 14px;
+  background-color: blue;
+  color: var(--white);
+  border-radius: 75px;
+  padding: 0 5px;
+}
+
+.services_section--content_left .service i {
+  color: blue;
+  font-size: 30px;
+}
+
+.service_name {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* Services section ends */
+
+/* Why choose-Us section starts */
+.chooseUs_section {
+  margin-top: 100px;
+}
+
+.chooseUs_section_reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reason {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.reason p {
+  font-size: 20px;
+  color: var(--indigo);
+}
+
+.reason i {
+  font-size: 20px;
+  color: var(--danger);
+}
+
+.chooseUs_section_reasons--left,
+.chooseUs_section_reasons--right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Why choose-Us section ends */
+
+/* services we provide section starts */
+.services_weProvide {
+  margin-top: 100px;
+  /* border: 2px solid blue; */
+}
+
+.services_weProvide--content-left {
+  position: relative;
+  z-index: -1;
+}
+
+.smartPhone1 {
+  position: absolute;
+  top: 276px;
+  right: -16px;
+  width: 200px;
+  height: 400px;
+}
+
+/* services we provide sections ends */
+
+/* Get mobile app starts */
+.getMobileApp {
+  margin-top: 100px;
+}
+
+.getMobileApp--content-left {
+  height: 450px;
+  object-fit: cover;
+}
+
+.getMobileApp--content-right {
+  align-self: center;
+}
+
+.GetAppstore img {
+  width: 250px;
+}
+/* Get mobile app ends */
+
+/* Our partners section starts */
+.ourPartners_section--top-title,
+.ourPartners_section--top-text {
+  text-align: center;
+}
+
+.ourPartners_section--top-title {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ourPartners_section--top-text {
+  opacity: 0.7;
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+.ourPartners_section--images {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.partnerImg {
+  border: 1px solid rgba(128, 128, 128, 0.128);
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+/* Our partners section ends */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .services_section,
+  .services_section--content {
+    height: 800px;
+  }
+
+  .services_section--content_right {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .services_section--content_right .service_title {
+    text-align: center;
+  }
+
+  .services_section--content_left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+@media (max-width: 768px) {
+  .services_section--content_left {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chooseUs_section {
+    margin-top: 400px;
+  }
+
+  .chooseUs_section_reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .chooseUs_section--content_left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .chooseUs_section--content_right {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .getMobileApp--content-right-top,
+  .getMobileApp--content-right-bottom {
+    text-align: center;
+  }
+
+  .GetAppstore {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .ourPartners_section--images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .smartPhone1 {
+    position: absolute;
+    top: 200px;
+    right: -12px;
+    width: 100px;
+    height: 200px;
+  }
+
+  .ourPartners_section--images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .ourPartners_section--images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

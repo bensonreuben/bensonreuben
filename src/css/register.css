@@ -1,0 +1,91 @@
+#registerBody {
+  background-color: blue;
+  height: 100vh;
+}
+
+.RegisterFormContainer {
+  background-color: white;
+  width: 35%;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.RegisterFormContainer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.RegisterFormContainer .title {
+  align-self: center;
+  text-align: center;
+}
+
+.RegisterFormContainer .title a {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: blue;
+  text-decoration: none;
+}
+
+.RegisterFormContainer div label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.RegisterFormContainer div input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(211, 211, 211, 0.76);
+}
+
+.RegisterFormContainer div input:focus {
+  outline: 1px solid blue;
+}
+
+.RegisterFormContainer .agree {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.RegisterFormContainer .agree input:focus {
+  outline: none;
+}
+
+button {
+  background-color: rgba(255, 166, 0, 0.753);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.RegisterFormContainer .signIn {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .RegisterFormContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .RegisterFormContainer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .RegisterFormContainer {
+    width: 90%;
+  }
+}
